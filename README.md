@@ -21,14 +21,14 @@ Project under "Embedded System Lab Training SS_2018" course, RCSE
 ### Functional Requirements
 - LDR should continuously sense the intensity of the surrounding Light.
 - If the surrounding light intensity is High:
-  - Display Message on LCD Screen "Light Intensity is OK."
+  - Do Nothing.
 - If the surrounding light intensity is Low:
-  - Display Message on LCD Screen "Light Intensity is Low. Please turn on Light."
-  - Wait for 5 mins so that user can turn on the light. 
-  - If person doesn't switch on the Light:
-    - Perform the action i.e. play the Buzzer sound.
-  - If user turns on the light:
-    - Check the Light Intensity again and display corresponding message.
+  - After 1 minute display a pop-up on monitor with message "Light Intensity is Low. Please increase the Light Intensity."
+  - Wait for 5 mins so that user can increase the light intensity. 
+  - If person doesn't increase the light intensity:
+    - Perform the action i.e. Lock the PC screen.
+  - If user increase the light intensity:
+    - Do Nothing.
 
 
 ### References
