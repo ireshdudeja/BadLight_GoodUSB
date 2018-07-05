@@ -1,13 +1,12 @@
-#define LED1 6
-#define LED2 5
-#define BUZZER 3
-#define LIGHT  A3
 #include <Keyboard.h>
 
+// Variable declaration
 int avgLightLevel;
 bool isAlertDisplayed = false;
 
+// Initial Setup
 void setup() {
+  
   // initialize digital pin LED_BUILTIN as an output.
   pinMode(LIGHT, INPUT);
   Serial.begin(9600);
@@ -17,8 +16,6 @@ void setup() {
   {
     // do nothing
   } ;
-  //Serial.println("I am in setup");
-
 
   //Take 16 readings from the light sensor and average them together
   avgLightLevel = 0;
@@ -41,15 +38,15 @@ void loop() {
   {
      previousTime = previousTime + 1000;  
      seconds = seconds +1;
-     if (seconds == 5 && isAlertDisplayed == false) // original value = 60
+     if (seconds == 5 && isAlertDisplayed == false) // original value = 60 (1 minute)
      {
-      // Display pop up
+      // Display pop-up
       Keyboard.press(KEY_LEFT_CTRL);
       Keyboard.press(KEY_LEFT_ALT);
       Keyboard.press('h');
       Keyboard.releaseAll();
      }
-     if (seconds == 10)// original value = 5 *60
+     if (seconds == 10)// original value = 5*60 (5 minutes)
      {
       // Lock the PC
       Keyboard.press(KEY_LEFT_GUI);              //Press the left windows key.
@@ -61,7 +58,7 @@ void loop() {
 
   } // end 1 second
    
-   delay(1000);
+   delay(1000); // delay of 1 second
    lightLevel = analogRead(LIGHT); //We need to take another reading to be able to exit the while loop
   } 
 
