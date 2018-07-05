@@ -2,7 +2,7 @@
 Task under "Embedded System Lab Training SS_2018" course, RCSE
 
 ### Breadboard
-<img width="95%" src="GoodLight_BadUSB_breadoard.png">
+<img width="95%" src="images/GoodLight_BadUSB_breadoard.png">
 
 ### Required Components
 - Arduino Uno Board with USB connector
@@ -14,7 +14,7 @@ Task under "Embedded System Lab Training SS_2018" course, RCSE
 - Jumper wires x 30
 
 ### Schematic
-<img width="95%" src="GoodLight_BadUSB_schematic.png">
+<img width="95%" src="images/GoodLight_BadUSB_schematic.png">
 
 ### Functional Requirements
 - LDR(Light-Dependent Resistor) should continuously sense the intensity of the surrounding Light.
@@ -22,7 +22,7 @@ Task under "Embedded System Lab Training SS_2018" course, RCSE
   - Do Nothing.
 - If the surrounding light intensity is Low:
   - After 1 minute display a pop-up on monitor with message "Light Intensity is Low. Please increase the Light Intensity."
-  - Wait for 5 minutes so that user can increase the light intensity. 
+  - Wait for 5 minutes so that user can increase the light intensity.
   - If person doesn't increase the light intensity:
     - Perform the action i.e. Lock the PC screen.
   - If user increase the light intensity:
@@ -30,4 +30,4 @@ Task under "Embedded System Lab Training SS_2018" course, RCSE
 
 
 ### References
-https://www.arduino.cc/en/Tutorial/HelloWorld 
+https://www.arduino.cc/en/Tutorial/HelloWorld
