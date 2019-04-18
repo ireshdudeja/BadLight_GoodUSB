@@ -1,5 +1,5 @@
-# Bad-Light Good-USB
-Task under "Embedded System Lab Training SS_2018" course, RCSE. It will remind the user repeatedly to not work on a PC without a sufficient light source.
+# GoodLight_BadUSB
+Task under "Embedded System Lab Training SS_2018" course, RCSE
 
 ### Breadboard
 <img width="95%" src="images/GoodLight_BadUSB_breadoard.png">
